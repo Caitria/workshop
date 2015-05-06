@@ -1,0 +1,324 @@
+<body>
+
+  <!-- PRELOADING -->
+	<div class="preload">
+    <div class="spinner"></div>
+	</div>
+
+
+	<nav class="navbar navbar-custom" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <h2 class="navbar-brand">July 24 & 25, 2015 - Yachay, Imbabura, Ecuador</h2>
+      </div>
+
+      <p class="phone"> Questions? hello@pocketknife.io</p>
+    </div>
+	</nav>
+
+
+  <!-- TOP -->
+	<div id="top" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="caption col-lg-12">
+          <h1 style="background-color: #27ade4; padding: 5px;">Design Thinking Workshops</h1>
+          <p style="background-color: #27ade4; padding: 5px;">Experience Stanford University's 'design thinking' approach to innovation.</p>
+        </div>
+      </div>
+    </div>
+	</div>
+
+
+  <!-- CONTENT 1 -->
+  <section id="content1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8 col-md-8 wow fadeInLeft">
+          <h3 class="uppercase">The Skills to Build Your Big Idea</h3>
+          <h2>Innovation in the Heart of Ecuador</h2>
+          <p>Join us for a full-day workshop at Yachay City of Knowledge and learn Stanford University's winning strategies for creating products and services that matter. Instructors from Stanford's own d.school classes will lead participants through an innovation sprint, and teach essential skills for any entrepeneur or professional.</p>
+          <div class="row">
+            <div class="col-lg-6">
+							<img src="<%= static_path(@conn, "/images/floor.jpg") %>" style="max-width: 100%;">
+              <h3><i class="fa fa-2x fa-users"></i> How Great Ideas Are Developed</h3>
+              <p>Our intensive programs are designed to help you experience the process of innovation. The entire workshop is hands-on - you're solving a problem with other local innovators. </p>
+            </div>
+
+            <div class="col-lg-6">
+							<img src="/images/group.jpg" style="max-width: 100%;">
+              <h3><i class="fa fa-2x fa-plus-circle"></i> Crucial Skills, Hands-on Experience</h3>
+              <p>Every product changes between idea and market. This workshop provides a hands-on experience of the entire design lifecycle, from user interviews to building and testing a prototype.</p>
+            </div>
+          </div>
+					<hr>
+        </div>
+
+        <!-- FORM 1 -->
+        <div class="col-lg-4 col-md-4 wow fadeInRight visible-lg visible-md">
+          <div class="form1">
+            <h2 class="blue"><i class="fa fa-pencil-square-o"></i> Reserve Your Place</h2>
+            <p>Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
+            <form action="/api/reserve" method="post">
+	            <input name="name" type="text" placeholder="name">
+	            <input name="email" type="text" placeholder="email address">
+              <input name="occupation" type="text" placeholder="occupation">
+							Instruction in English, comprehension required but groups may choose to work in Spanish.
+															</br>
+															<label>
+																<input name="confirm" type="checkbox">I understand.
+															</label>
+                              <select name="workshop">
+                                <option value="" disabled selected>Select your workshop</option>
+                                <option value="webdesign">Friday July 24, 2015 - Entrepreneurs $45</option>
+                                <option value="graphicdesign">July 25, 2015 - University Students & Entrepreneurs  $45</option>
+
+                              </select>
+                              <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
+            </form>
+          </div>
+        </div> <!-- visible lg - md -->
+
+
+        <!-- FORM 2 -->
+        <div class="col-lg-4 col-md-4 wow fadeInRight visible-sm visible-xs">
+          <div class="form2">
+            <h2 class="blue">Reserve Your Place</h2>
+            <p class="lead">Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
+            <form action="/api/reserve" method="post">
+	            <input name="name" type="text" placeholder="name">
+	            <input name="email" type="text" placeholder="email address">
+              <input name="occupation" type="text" placeholder="occupation">
+							Instruction in English, comprehension required but groups may choose to work in Spanish.
+															</br>
+															<label>
+																<input name="confirm" type="checkbox">I understand.
+															</label>
+                              <select name="workshop">
+                                <option value="" disabled selected>Select your workshop</option>
+                                <option value="webdesign">Friday July 24, 2015 - Entrepreneurs $45</option>
+                                <option value="graphicdesign">July 25, 2015 - University Students & Entrepreneurs  $45</option>
+
+                              </select>
+                              <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
+            </form>
+          </div>
+        </div> <!-- visible lg - md -->
+			</div>
+
+									</br>
+
+
+
+              	  <div class="row">
+                    <div class="col-lg-6 col-md-6  text-center wow fadeInDown" data-wow-delay="0.2s">
+											<img src="/images/boss.png" ; height="90px">
+											<h4 class="text-center">Friday, July 24th</h5>
+<h4 class="uppercase">Entrepreneur/Professionals</h4>
+<p>The decisions you make are important ones - they shape your company's products and services. Design thinking breaks the innovation lifecycle into five parts, and this workshop will teach you the skills you need at each step to apply to your own work.</p>
+
+</div>
+
+<div class="col-lg-6 col-md-6 text-center wow fadeInDown" data-wow-delay="0.4s">
+  <img src="/images/bot.png" ; height="90px">
+	<h4 class="text-center">Saturday, July 25th</h5>
+<h4 class="uppercase">University Students</h4>
+<p>Maybe you have an idea already and you're looking figuring out how to make it real. Maybe you're curious about learning how 'innovation' really works. This workshop will teach you hireable skills through a hands-on innovation sprint. Experience how great ideas are made.</p>
+</div>
+										</br>
+</div>
+<div class="row">
+									</br>
+				          <div class="col-lg-8 col-lg-offset-2">
+											</br>
+											<h2 style="text-align: center;">Workshop Overview</h2>
+												</br>
+											<p>*Workshop instruction in English, comprehension required.
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Part I</th>
+															<th>Part II</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<h5>Introduction & Welcome</h5>
+																<ul>
+																	<li>form teams and discuss innovation sprint prompt</li>
+																	<li>materials orientation</li>
+																</ul>
+															</td>
+															<td>
+																<h5>Prototype</h5>
+																<ul>
+																	<li>rapid, iterative product realization</li>
+																	<li>create testing fieldguide, make a plan</li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<h5>Empathize</h5>
+																<ul>
+																	<li>interview prep and demonstration</li>
+																	<li>user research skills</li>
+																	<li>practice interviewing users</li>
+																</ul>
+															</td>
+															<td>
+																<h5>Test</h5>
+																<ul>
+																	<li>user testing methods</li>
+																	<li>interpreting feedback</li>
+																	<li>modifying your prototype</li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<h5>Define</h5>
+																<ul>
+																	<li>tools for understanding user research</li>
+																	<li>POV/user persona mapping</li>
+																	<li>insight identification</li>
+																</ul>
+															</td>
+															<td>
+																<h5>Storytelling</h5>
+																<ul>
+																	<li>the elements of a memorable story</li>
+																	<li>groups share their prototypes</li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<h5>Ideate</h5>
+																<ul>
+																	<li>structured, collaborative brainstorming tools</li>
+																	<li>analogous inspiration</li>
+																</ul>
+															</td>
+															<td>
+																<h5>Debrief</h5>
+																<ul>
+																	<li>group networking activity</li>
+																	<li>how to use design in daily life</li>
+																</ul>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+									</div>
+</div>
+</div>
+								</br>
+								<div class="row">
+									<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col sm-offset-3">
+										<img src="/images/sxswemi.jpg" style="max-width: 100%;">
+									</div>
+								</div>
+</section>
+
+<!-- CONTENT 2 -->
+<section id="content2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+			  <h3 class="text-center uppercase wow fadeInDown">Yachay, Imbabura, Ecuador</h3>
+			  <h2 class="text-center wow fadeInUp">Your design journey starts here</h2>
+
+
+			  <div class="row">
+			    <div class="col-lg-7 col-md-7 wow fadeInLeft">
+			      <div id="video">
+							<iframe src="https://player.vimeo.com/video/45075413" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/45075413">YACHAY</a> from <a href="https://vimeo.com/user2438318">jose guayasamin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+			      </div>
+			    </div>
+
+			    <div class="col-lg-5 col-md-5">
+			      <p style="font-size: 20px;"><strong>Innovation is  about meeting the challenges that we encounter in our lives.</strong></p>
+						<p style="font-size: 20px;">Workshop participants will work in small groups to tackle some of Ecuador's most pressing issues. They'll be doing this at the heart of the country's defenses. Yachay is a community of business and education that works to understand its challenges and opportunities. You will be addressing the same issues, and your group's ideas can help The City of Knowledge respond.
+			    </div>
+			  </div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FEATURES -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-4  text-center wow fadeInDown" data-wow-delay="0.2s">
+					<i class="fa fa-4x fa-search blue feature"></i>
+					<h4 class="uppercase">Yachay City of Knowledge</h4>
+					<p>Workshop host and Ecuadorian research, business and educational hub.</p>
+					<a class="button button-small button-dark" href="http://www.yachay.gob.ec/">Read more</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.4s">
+					<i class="fa fa-4x fa-flask blue feature"></i>
+					<h4 class="uppercase">Design Thinking</h4>
+					<p>A five-step framework for innovation, pioneered at Stanford's d.school.</p>
+					<a class="button button-small button-dark" href="http://dschool.stanford.edu/our-point-of-view/">Read more</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.6s">
+					<i class="fa fa-4x fa-rocket blue feature"></i>
+					<h4 class="uppercase">Try it out!</h4>
+					<p>Take the d.school's Virtual Crash Course to get a taste of the workshop.</p>
+					<a class="button button-small button-dark" href="https://dschool.stanford.edu/dgift/">Read more</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- CONTENT 3 -->
+<section id="content2" class="wow fadeInDown">
+	<div class="container">
+		<div class="row">
+			<h2> Workshop Instruction</h2>
+							</br>
+							<div class="col-lg-3 col-md-3">
+								<img src="/images/co.jpg" style="max-width: 75%;">
+							</div>
+			        <div class="col-lg-9 col-md-9">
+			          <h3>Caitria O'Neill</h3>
+			          <p>Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University. </p>
+			        </div>
+		</div>
+						</br>
+					  <div class="row">
+						  <div class="col-lg-3 col-md-3">
+								<img src="/images/david.jpg" style="max-width: 75%;">
+							</div>
+							<div class="col-lg-9 col-md-9">
+								<h3>David Janka</h3>
+								<p><i>Subject to workshop size</i></p>
+								<p>David is a Design Thinking Consultant Teaching Faculty at Stanford University's d.school. He's led workshops and done strategic work for a diverse group of clients, including Facebook, PepsiCo, Tokyo Institute of Technology and Stanford Graduate School of Business. He is a graduate of UNC Chapel Hill and Stanford Medical School.  </p>
+							</div>
+						</div>
+	</div>
+	<div class="row">
+						</br>
+						<div class="col-lg-3 col-md-3"></div>
+						<div class="col-lg-9 col-md-9">
+							<div id="panel">
+								<h3>Additional Instructors TBD</h3>
+								<p>Guest facilitators from Yachay will also be featured at the event. Check back here for updates.</p>
+							</div>
+						</div>
+	</div>
+</div>
+</section>

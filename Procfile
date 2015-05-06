@@ -1,0 +1,1 @@
+web: mix deps.get && mix phoenix.serve

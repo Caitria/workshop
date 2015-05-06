@@ -1,7 +1,21 @@
-# Workshop Landing Page
+# Workshop Signup Page
 
-Caitria! To serve the site locally this from the site's root folder:
+## Dependencies
 
-    $ python -m SimpleHTTPServer
+- [Elixir](http://elixir-lang.org)
+- [Node.js](http://nodejs.org)
 
-The site should then be accessible at [http://localhost:8000](http://localhost:8000)
+## Running
+
+```bash
+$ mix deps.get
+$ npm install
+$ mix phoenix.server
+```
+
+## Deploying to Heroku
+
+```bash
+$ heroku create [APP] --buildpack https://github.com/heroku/heroku-buildpack-ruby
+$ git push heroku [BRANCH:]master
+```

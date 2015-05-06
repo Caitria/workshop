@@ -1,8 +1,5 @@
 $(function() {
-    
-	
 
- 	
 	//ANIMATIONS
   	var wow = new WOW(
 	  {
@@ -13,14 +10,11 @@ $(function() {
 	  }
 	);
 	wow.init();
-    
-	
 
    //VIDEO
-   $("#video").fitVids({ customSelector: "iframe[src^='http://vimeo.com/89527215'], iframe[src^='http://vimeo.com/89527215']"});
-   
-   
-   
+   $("#video").fitVids({ customSelector: "iframe[src^='http://vimeo.com/89527215']"});
+
+
    //MILESTONE
     $('#infinity').data('countToOptions', {
         onComplete: function (value) {
@@ -39,33 +33,24 @@ $(function() {
         options = $.extend({}, options || {}, $this.data('countToOptions') || {});
         $this.countTo(options);
     }
-	 
 });
 
 
-	//SHARE BUTTONS
-	$('.social-likes').socialLikes({
+//SHARE BUTTONS
+$('.social-likes').socialLikes({
     url: 'http://www.themeforest.net',
     counters: true,
     singleTitle: 'Share it!'
 });
 
 $(window).load(function(){
-	
-	
+
 	//PARALLAX BACKGROUND
 	$(window).stellar({
 		horizontalScrolling: false,
 });
-    
-	
+
     //PRELOADER
     $('.preload').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(350).css({'overflow-x':'hidden'});
-	
 });
-	
-    
-
-
-

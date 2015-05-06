@@ -79,7 +79,7 @@ section {
 	min-height:400px;
 	color:#ffffff;
 	background-color:#d88da1;
-	background:url(../img/crowd.jpg) no-repeat fixed;
+	background:url(/images/crowd.jpg) no-repeat fixed;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -171,7 +171,7 @@ section {
 	padding:70px 0;
 	text-transform:uppercase;
 	background:#27ade4;
-	background:url(../img/map.png) no-repeat;
+	background:url(/images/map.png) no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -390,7 +390,7 @@ input, select {
 #image1 {
 	color:#ffffff;
 	background-color:#d88da1;
-	background:url(../img/image2.jpg) no-repeat fixed;
+	background:url(/images/image2.jpg) no-repeat fixed;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
