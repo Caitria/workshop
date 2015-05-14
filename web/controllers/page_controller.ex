@@ -4,20 +4,24 @@ defmodule Workshop.PageController do
   plug :validate
   plug :action
 
-  @thanks_text """
-Thanks for showing your interest! We'll be getting back to you soon.
-"""
-
   def validate(conn, _params) do
     conn
   end
 
   def index(conn, _params) do
-    render conn, "index.html"
+    conn
+    |> render("index.html")
   end
 
   def reserve(conn, _params) do
     # TODO forward to an actual page
-    text conn, @thanks_text
+    conn
+    |> redirect(to: "/success")
+  end
+
+  def success(conn, _params) do
+    conn
+    |> put_flash(:info, "You've successfully signed up!")
+    |> render("index.html")
   end
 end

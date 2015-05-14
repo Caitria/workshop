@@ -16,6 +16,8 @@ defmodule Workshop.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    get "/success", PageController, :success
   end
 
   scope "/api", Workshop do

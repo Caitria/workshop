@@ -1,22 +1,3 @@
-<body>
-
-  <!-- PRELOADING -->
-	<div class="preload">
-    <div class="spinner"></div>
-	</div>
-
-
-	<nav class="navbar navbar-custom" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <h2 class="navbar-brand">July 24 & 25, 2015 - Yachay, Imbabura, Ecuador</h2>
-      </div>
-
-      <p class="phone"> Questions? hello@pocketknife.io</p>
-    </div>
-	</nav>
-
-
   <!-- TOP -->
 	<div id="top" data-stellar-background-ratio="0.5">
     <div class="container">

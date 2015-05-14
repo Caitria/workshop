@@ -448,3 +448,6 @@ input, select {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+/* Phoenix flash messages */
+.alert:empty { display: none; }
