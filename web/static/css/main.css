@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-	color:#27ade4;
+	color:#000;
 	font-family:Montserrat;
 	font-size:17px;
 	font-weight:700;
@@ -76,15 +76,15 @@ section {
 	overflow: hidden;
 	z-index: 0;
 	height:auto;
-	min-height:400px;
+	min-height:350px;
 	color:#ffffff;
 	background-color:#d88da1;
-	background:url(/images/crowd.jpg) no-repeat fixed;
+	background:url(/images/bannerstanf.jpg) no-repeat fixed;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
 	position:relative;
-	border-bottom:5px solid #27ade4;
+	border-bottom:5px solid #A41034;
 }
 
 #top .caption {
@@ -279,13 +279,13 @@ footer small {
 
 .button-dark {
 	color: #fff;
-	background:#27ade4;
+	background:#A41034;
 }
 
 .button-dark:hover,
 .button-dark:active {
 	color: #ffffff;
-	background: #1988b6;
+	background: #710001;
 	text-decoration:none;
 }
 
@@ -397,7 +397,7 @@ input, select {
 }
 
 .blue {
-	color:#27ade4;
+	color:#A41034;
 }
 
 /* feature icon effect */
