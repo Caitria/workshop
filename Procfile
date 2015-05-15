@@ -1,1 +1,1 @@
-web: mix phoenix.server
+web: brunch build --production && mix phoenix.digest && mix phoenix.server
