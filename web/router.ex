@@ -8,21 +8,18 @@ defmodule Workshop.Router do
     plug :protect_from_forgery
   end
 
-  pipeline :api do
-    plug :accepts, ["json"]
-  end
-
   scope "/", Workshop do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", SignupController, :index
+    get "/success", SignupController, :success
+
+    post "/signup", ParticipantController, :signup
+
   end
 
-  scope "/api", Workshop do
-    # This isn't really an API.
-    pipe_through :api
-
-    post "/reserve", PageController, :reserve
-  end
+  # scope "/admin", Workshop do
+  #   resources "/participants", ParticipantController, only: [:index]
+  # end
 
 end

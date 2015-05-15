@@ -27,6 +27,26 @@
 
 	</head>
 
+  <body>
+
+  <!-- PRELOADING -->
+	<div class="preload">
+    <div class="spinner"></div>
+	</div>
+
+  <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+  <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+	<nav class="navbar navbar-custom" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <h2 class="navbar-brand">Sept 5th and 19th, Venezia - Sept 12th and 26th, Treviso</h2>
+      </div>
+
+      <p class="phone"> Questions? hello@pocketknife.io</p>
+    </div>
+	</nav>
+
   <%= @inner %>
 
   <!-- FOOTER -->

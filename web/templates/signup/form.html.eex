@@ -1,0 +1,18 @@
+<%= form_for @conn, "/signup", [name: :participant], fn f -> %>
+  <%= text_input f, :name, value: "name" %>
+  <%= text_input f, :email, value: "email" %>
+  <%= text_input f, :occupation, value: "occupation" %>
+	Instruction in English, comprehension required but groups may choose to work in Spanish.
+	<br />
+	<label>
+    <%= checkbox f, :confirm %>I understand.
+	</label>
+
+  <%= select f, :workshop, [
+      nil: "Select your workshop",
+      entrepreneur: "Friday July 24, 2015 - Entrepreneurs $45",
+      student: "July 25, 2015 - University Students & Entrepreneurs  $45"] %>
+  
+  <%= submit "sign up" %>
+
+<% end %>

@@ -23,5 +23,9 @@ config :workshop, Workshop.Endpoint,
     ]
   ]
 
+config :workshop, Workshop.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: ConfigHelper.get_postgres_url(database: "workshop_dev")
+
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"

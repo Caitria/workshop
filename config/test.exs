@@ -6,5 +6,9 @@ config :workshop, Workshop.Endpoint,
   http: [port: 4001],
   server: false
 
+config :workshop, Workshop.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: ConfigHelper.get_postgres_uri(database: "workshop-test")
+
 # Print only warnings and errors during test
 config :logger, level: :warn
