@@ -22,5 +22,4 @@ $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-nodejs
 $ heroku addons:create heroku-postgresql
 $ heroku config:set MIX_ENV=prod
 $ git push heroku [BRANCH:]master
-$ heroku run mix phoenix.digest
 ```

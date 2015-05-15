@@ -1,1 +1,1 @@
-web: brunch build --production && mix phoenix.digest && mix phoenix.server
+web: brunch build --production && mix do ecto.create, ecto.migrate, phoenix.digest, phoenix.server
