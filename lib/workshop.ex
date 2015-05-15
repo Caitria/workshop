@@ -7,6 +7,7 @@ defmodule Workshop do
     children = [
       # Start the endpoint when the application starts
       supervisor(Workshop.Endpoint, []),
+      supervisor(Workshop.Repo, [])
     ]
 
     opts = [strategy: :one_for_one, name: Workshop.Supervisor]

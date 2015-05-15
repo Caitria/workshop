@@ -1,4 +1,4 @@
-defmodule Workshop.PageController do
+defmodule Workshop.SignupController do
   use Workshop.Web, :controller
 
   plug :validate
@@ -13,7 +13,7 @@ defmodule Workshop.PageController do
     |> render("index.html")
   end
 
-  def reserve(conn, _params) do
+  def signup(conn, _params) do
     # TODO forward to an actual page
     conn
     |> redirect(to: "/success")

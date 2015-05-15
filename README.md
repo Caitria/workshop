@@ -17,6 +17,6 @@ $ mix phoenix.server
 
 ```bash
 TODO - change the buildpack
-$ heroku create [APP] --buildpack https://github.com/heroku/heroku-buildpack-ruby
+$ heroku create [APP] --buildpack https://github.com/HashNuke/heroku-buildpack-elixir
 $ git push heroku [BRANCH:]master
 ```

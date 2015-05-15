@@ -1,0 +1,27 @@
+<h2>Show participant</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @participant.name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @participant.email %>
+  </li>
+
+  <li>
+    <strong>Occupation:</strong>
+    <%= @participant.occupation %>
+  </li>
+
+  <li>
+    <strong>Workshop:</strong>
+    <%= @participant.workshop %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: participant_path(@conn, :index) %>

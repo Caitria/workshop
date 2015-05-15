@@ -5,6 +5,41 @@
 # is restricted to this project.
 use Mix.Config
 
+defmodule ConfigHelper do
+
+  @fallbacks %{username: "postgres",
+               password: "postgres",
+               host:     "localhost",
+               database: "workshop"}
+
+  def get_postgres_url(options) do
+    case System.get_env("DATABASE_URL") do
+      none when none == nil or none == "" ->
+        if Dict.get(options, :fallback, true) do
+          username = get(options, :username, "PGUSER")
+          password = get(options, :password, "PGPASSWORD")
+          host     = get(options, :host,     "PGHOST")
+          database = get(options, :database, "PGDATABASE")
+          "postgres://#{username}:#{password}@#{host}/#{database}"
+        else
+          raise ArgumentError, message: "missing env var `DATABASE_URL`"
+        end
+      url ->
+        url
+    end
+  end
+
+  def get_ecto_url(options \\ []) do
+    get_postgres_url(options)
+      |> String.replace(~r"^postgres://", "ecto://")
+  end
+
+  defp get(options, key, system) do
+    Keyword.get(options, key, System.get_env(system) || @fallbacks[key])
+  end
+
+end
+
 # Configures the endpoint
 config :workshop, Workshop.Endpoint,
   url: [host: "localhost"],
