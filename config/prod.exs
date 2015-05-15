@@ -10,4 +10,4 @@ config :logger, level: :info
 
 config :workshop, Workshop.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: ConfigHelper.get_postgres_uri(fallback: false)
+  url: ConfigHelper.get_postgres_url(fallback: false)

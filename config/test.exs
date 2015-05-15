@@ -8,7 +8,7 @@ config :workshop, Workshop.Endpoint,
 
 config :workshop, Workshop.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: ConfigHelper.get_postgres_uri(database: "workshop-test")
+  url: ConfigHelper.get_postgres_url(database: "workshop-test")
 
 # Print only warnings and errors during test
 config :logger, level: :warn
