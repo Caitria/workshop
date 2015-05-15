@@ -16,7 +16,10 @@ $ mix phoenix.server
 ## Deploying to Heroku
 
 ```bash
-TODO - change the buildpack
 $ heroku create [APP] --buildpack https://github.com/HashNuke/heroku-buildpack-elixir
+$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs
+$ heroku addons:create heroku-postgresql
+$ heroku config:set MIX_ENV=prod
 $ git push heroku [BRANCH:]master
+$ heroku run mix phoenix.digest
 ```

@@ -1,1 +1,1 @@
-web: mix deps.get && mix phoenix.server
+web: mix phoenix.server
