@@ -2,7 +2,7 @@
   <%= text_input f, :name, value: "name" %>
   <%= text_input f, :email, value: "email" %>
   <%= text_input f, :occupation, value: "occupation" %>
-	Instruction in English, comprehension required but groups may choose to work in Spanish.
+	Instruction in English.
 	<br />
 	<label>
     <%= checkbox f, :confirm %>I understand.
@@ -10,8 +10,10 @@
 
   <%= select f, :workshop, [
       nil: "Select your workshop",
-      entrepreneur: "Friday July 24, 2015 - Entrepreneurs $45",
-      student: "July 25, 2015 - University Students & Entrepreneurs  $45"] %>
+      "sept-5":  "Sat September 5th, 2015 Venezia -  €200",
+      "sept-12": "Sat September 12th, 2015 Treviso - €200",
+      "sept-19": "Sat September 19th, 2015 Venezia - €200",
+      "sept-26": "Sat September 26th, 2015 Treviso - €200"] %>
   
   <%= submit "sign up" %>
 

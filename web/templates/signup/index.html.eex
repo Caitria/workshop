@@ -40,30 +40,7 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-lg visible-md">
           <div class="form1">
             <h2 class="blue"><i class="fa fa-pencil-square-o"></i> Reserve Your Place</h2>
-<<<<<<< HEAD:web/templates/page/index.html.eex
-            <p>Signing up reserves you a €200 ticket to the workshop day of your choice.</p>
-            <form action="/api/reserve" method="post">
-	            <input name="name" type="text" placeholder="name">
-	            <input name="email" type="text" placeholder="email address">
-              <input name="occupation" type="text" placeholder="occupation">
-							Instruction in English.
-															</br>
-															<label>
-																<input name="confirm" type="checkbox">I understand.
-															</label>
-                              <select name="workshop">
-                                <option value="" disabled selected>Select your workshop</option>
-                                <option value="#">Sat September 5th, 2015 Venezia -  €200</option>
-                                <option value="#">Sat September 12th, 2015 Treviso - €200</option>
-                                <option value="#">Sat September 19th, 2015 Venezia - €200</option>
-                                <option value="#">Sat September 26th, 2015 Treviso - €200</option>
-                              </select>
-                              <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
-            </form>
-=======
-            <p>Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
             <%= render("form.html", conn: @conn) %>
->>>>>>> dev:web/templates/signup/index.html.eex
           </div>
         </div> <!-- visible lg - md -->
 
@@ -72,30 +49,7 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-sm visible-xs">
           <div class="form2">
             <h2 class="blue">Reserve Your Place</h2>
-<<<<<<< HEAD:web/templates/page/index.html.eex
-            <p class="lead">Signing up reserves you a €200 ticket to the workshop day of your choice.</p>
-            <form action="/api/reserve" method="post">
-	            <input name="name" type="text" placeholder="name">
-	            <input name="email" type="text" placeholder="email address">
-              <input name="occupation" type="text" placeholder="occupation">
-							Instruction in English, comprehension required.
-															</br>
-															<label>
-																<input name="confirm" type="checkbox">I understand.
-															</label>
-                              <select name="workshop">
-                                <option value="#">Sat September 5th, 2015 Venezia -  €200</option>
-                                <option value="#">Sat September 12th, 2015 Treviso - €200</option>
-                                <option value="#">Sat September 19th, 2015 Venezia - €200</option>
-                                <option value="#">Sat September 26th, 2015 Treviso - €200</option>
-
-                              </select>
-                              <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
-            </form>
-=======
-            <p class="lead">Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
             <%= render("form.html", conn: @conn) %>
->>>>>>> dev:web/templates/signup/index.html.eex
           </div>
         </div> <!-- visible lg - md -->
 			</div>
