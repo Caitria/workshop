@@ -1,1 +1,1 @@
-web: mix deps.get && mix phoenix.serve
+web: brunch build --production && mix phoenix.digest && mix phoenix.server
