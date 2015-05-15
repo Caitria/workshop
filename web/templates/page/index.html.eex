@@ -12,7 +12,7 @@
         <h2 class="navbar-brand">Sept 5th and 19th, Venezia - Sept 12th and 26th, Treviso</h2>
       </div>
 
-      <p class="phone"> Questions? hello@pocketknife.io</p>
+      <p class="phone"> Questions? info@jointheloop.org </p>
     </div>
 	</nav>
 
@@ -59,21 +59,22 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-lg visible-md">
           <div class="form1">
             <h2 class="blue"><i class="fa fa-pencil-square-o"></i> Reserve Your Place</h2>
-            <p>Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
+            <p>Signing up reserves you a €200 ticket to the workshop day of your choice.</p>
             <form action="/api/reserve" method="post">
 	            <input name="name" type="text" placeholder="name">
 	            <input name="email" type="text" placeholder="email address">
               <input name="occupation" type="text" placeholder="occupation">
-							Instruction in English, comprehension required but groups may choose to work in Spanish.
+							Instruction in English.
 															</br>
 															<label>
 																<input name="confirm" type="checkbox">I understand.
 															</label>
                               <select name="workshop">
                                 <option value="" disabled selected>Select your workshop</option>
-                                <option value="webdesign">Friday July 24, 2015 - Entrepreneurs $45</option>
-                                <option value="graphicdesign">July 25, 2015 - University Students & Entrepreneurs  $45</option>
-
+                                <option value="#">Sat September 5th, 2015 Venezia -  €200</option>
+                                <option value="#">Sat September 12th, 2015 Treviso - €200</option>
+                                <option value="#">Sat September 19th, 2015 Venezia - €200</option>
+                                <option value="#">Sat September 26th, 2015 Treviso - €200</option>
                               </select>
                               <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
             </form>
@@ -85,20 +86,21 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-sm visible-xs">
           <div class="form2">
             <h2 class="blue">Reserve Your Place</h2>
-            <p class="lead">Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
+            <p class="lead">Signing up reserves you a €200 ticket to the workshop day of your choice.</p>
             <form action="/api/reserve" method="post">
 	            <input name="name" type="text" placeholder="name">
 	            <input name="email" type="text" placeholder="email address">
               <input name="occupation" type="text" placeholder="occupation">
-							Instruction in English, comprehension required but groups may choose to work in Spanish.
+							Instruction in English, comprehension required.
 															</br>
 															<label>
 																<input name="confirm" type="checkbox">I understand.
 															</label>
                               <select name="workshop">
-                                <option value="" disabled selected>Select your workshop</option>
-                                <option value="webdesign">Friday July 24, 2015 - Entrepreneurs $45</option>
-                                <option value="graphicdesign">July 25, 2015 - University Students & Entrepreneurs  $45</option>
+                                <option value="#">Sat September 5th, 2015 Venezia -  €200</option>
+                                <option value="#">Sat September 12th, 2015 Treviso - €200</option>
+                                <option value="#">Sat September 19th, 2015 Venezia - €200</option>
+                                <option value="#">Sat September 26th, 2015 Treviso - €200</option>
 
                               </select>
                               <input type="submit" class="button button-dark button-big uppercase pull-right" value="sign up" />
@@ -107,13 +109,23 @@
         </div> <!-- visible lg - md -->
 			</div>
 </section>
+<div id="programme">
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4">
+    <h2 style="text-align: center; background-color: #fff; padding: 5px;">The Programme</h2>
+      <h4 style="text-align: center;background-color: #fff; padding: 5px;">9:30 - 17:00</h4>
+      <p style="text-align: center; color: #000; background-color: #fff; padding: 5px;">This day-long workshop brings multi-disciplinary teams of entrepreneurs and innovators together to learn Design Thinking through a hands-on design sprint. You'll experience the full lifecycle of design and network with other local leaders.</p>
+      <h5 style="font-size: 18px; text-align: center; color: #000; background-color: #fff; padding: 5px;">Lunch and two coffee services, included in workshop cost.</h5>
+    </div>
+  </div>
+</div>
 
 <!-- CONTENT 2 -->
 <section id="content2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
-			  <h3 class="text-center uppercase wow fadeInDown">Design Thinking</h3>
+			  <h3 class="text-center uppercase wow fadeInDown">Design Thinking For Your Business</h3>
 			  <h2 class="text-center wow fadeInUp">A Five-Step Innovation Framework</h2>
 
 
@@ -160,15 +172,20 @@
         <div class="col-lg-4 col-md-4  text-center wow fadeInDown" data-wow-delay="0.2s">
           <i class="fa fa-4x fa-search blue feature"></i>
           <h4 class="uppercase">Innovation In Veneto</h4>
-          <p>University Ca' Foscari jumpstarts innovation in Venezia and Treviso.</p>
+          <p>Università Ca' Foscari jumpstarts innovation in Venezia and Treviso.</p>
           <a class="button button-small button-dark" href="http://www.jointheloop.org/#!the-bootcamp-in-italy/cvuc/">Read more</a>
         </div>
 
 			</div>
+    </br>
     <hr>
 		</div>
 	</div>
-
+  <div class="row">
+    </br>
+    <div class="col-lg-12 text-center"><h1 style="font-size: 30px; font-weight: 700;">Event Partners</h1>
+    </div>
+  </div>
   <div class="row">
     </br>
     <div class="col-lg-3 col-lg-offset-1 col-md-2 col-md-offset-1">
@@ -176,14 +193,14 @@
     </div>
     <div class="col-lg-8 col-md-8">
       <h3>University Ca' Foscari</h3>
-      <p>Text filler.</p>
+      <p>Università Ca'Foscari Venezia (Ca' Foscari University of Venice) is committed to innovation and local sustainability. Founded in 1868, it was first educational institution in Italy to offer higher education in commerce and economics. The University has about 20,000 enrolled students and offers a wide range of subjects in 4 main scientific-cultural areas: economics, languages, sciences and humanities. Ca' Foscari University runs 15 First Cycle Degree Programmes and 29 Second Cycle Degree Programmes, 39 Specialist Master’s Programmes and 14 Research Doctorates.</p>
     </div>
   </div>
 
 <div class="row">
   </br>
   <div class="col-lg-3 col-lg-offset-1 col-md-2 col-md-offset-1">
-    <img src="<%= static_path(@conn, "/images/cafosc.jpg") %>" style="max-width: 100px;">
+    <img src="<%= static_path(@conn, "/images/bot.png") %>" style="max-width: 100px;">
   </div>
   <div class="col-lg-8 col-md-8">
     <h3>The Loop</h3>
@@ -196,36 +213,59 @@
 <!-- CONTENT 3 -->
 <section id="content2" class="wow fadeInDown">
 	<div class="container">
+    <div class="row">
+      <h2 style="text-align: center;">Workshop Facilitators</h2>
+    </div>
 		<div class="row">
-			<h2> Workshop Instruction</h2>
 							</br>
-							<div class="col-lg-3 col-md-3">
-								<img src="/images/co.jpg" style="max-width: 75%;">
-							</div>
-			        <div class="col-lg-9 col-md-9">
-			          <h3>Caitria O'Neill</h3>
-			          <p>Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University. </p>
-			        </div>
+				<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+          <img src="/images/co.jpg" style="max-width: 100%;">
+				</div>
+        <div class="col-lg-8 col-md-8">
+          <h3>Caitria O'Neill</h3>
+          <p>Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University. </p>
+		    </div>
+    </div>
+		</br>
+	  <div class="row">
+		  <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+        <img src="/images/ugo.jpg" style="max-width: 100%;">
+			</div>
+			<div class="col-lg-8 col-md-8">
+				<h3>Ugo Bot</h3>
+				<p>Co-Founder of The LOOP. Ugo is a social entrepreneur with 15 years of experience in international development, conflict resolution and humanitarian aid. Prior to starting The LOOP, he has worked in the Balkans and in the Middle East, holding management positions in the UN Agency for Palestine Refugees, in the United Nations Development Programme (Iraq Mission), in the United Nations Assistance Mission for Iraq (UNAMI) and in the International Organization for Migration (Iraq/Kuwait mission). Ugo holds a BA in Business Administration and an MA in Conflict Resolution.  </p>
+			</div>
 		</div>
-						</br>
-					  <div class="row">
-						  <div class="col-lg-3 col-md-3">
-								<img src="/images/david.jpg" style="max-width: 75%;">
-							</div>
-							<div class="col-lg-9 col-md-9">
-								<h3>David Janka</h3>
-								<p><i>Subject to workshop size</i></p>
-								<p>David is a Design Thinking Consultant Teaching Faculty at Stanford University's d.school. He's led workshops and done strategic work for a diverse group of clients, including Facebook, PepsiCo, Tokyo Institute of Technology and Stanford Graduate School of Business. He is a graduate of UNC Chapel Hill and Stanford Medical School.  </p>
-							</div>
-						</div>
+            </br>
+            <div class="row">
+              <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+                <img src="/images/tm.jpg" style="max-width: 100%;">
+              </div>
+              <div class="col-lg-8 col-md-8">
+                <h3>Thomas Moulia</h3>
+                <p>Thomas is a software engineer and the founder of Pocketknife Design & Engineering. He's experienced Silicon Valley as a software engineer. previously as an early hire engineer at Weld and Spatch. His work has been featured in The Daily Mail and The Verge among others publications. Thomas is currently focused on email/communications technologies and the medical field. He is a graduate of MIT with a BS in Brain and Cognitive Sciences. </p>
+              </div>
+
+            </div>
+            </br>
+            <div class="row">
+              <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+                </br>
+                <img src="/images/mb.jpg" style="max-width: 100%;">
+              </div>
+              <div class="col-lg-8 col-md-8">
+                <h3>Madison Bonovich</h3>
+                <p>Co-founder of The LOOP. Before launching The LOOP, Madison has worked for the United Nations in the Balkans and the Middle East as an international consultant, researcher and trainer for a wide range of clients including CIDA, UNHCR, nonprofit organisations and social entrepreneurs. Madison holds a BA in Political Philosophy and a MA in Conflict resolution and Gender and Development.</p>
+              </div>
+            </div>
 	</div>
 	<div class="row">
 						</br>
 						<div class="col-lg-3 col-md-3"></div>
-						<div class="col-lg-9 col-md-9">
+						<div class="col-lg-8 col-md-8">
 							<div id="panel">
-								<h3>Additional Instructors TBD</h3>
-								<p>Guest facilitators from Yachay will also be featured at the event. Check back here for updates.</p>
+								<h3>Additional Instructors</h3>
+								<p><i>Guest facilitators from Ca' Foscari will also be featured at the event.</i></p>
 							</div>
 						</div>
 	</div>

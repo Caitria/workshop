@@ -127,6 +127,23 @@ section {
 	margin-bottom:100px;
 }
 
+#programme {
+	width: 100%;
+	overflow: hidden;
+	z-index: 0;
+	height:auto;
+	min-height:350px;
+	color:#ffffff;
+	background-color:#d88da1;
+	background:url(/images/crowd.jpg) no-repeat fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	position:relative;
+	border-bottom:5px solid #999999;
+	padding-top: 20px;
+}
+
 
 /* SECTION CONTENT 2 */
 
