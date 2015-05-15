@@ -6,7 +6,7 @@ defmodule Workshop.Endpoint do
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :workshop, gzip: false,
+    at: "/", from: :workshop, gzip: true,
     only: ~w(index.html css images fonts img js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
