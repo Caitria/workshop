@@ -84,7 +84,7 @@
 
 			    <div class="col-lg-5 col-md-5">
 			      <p style="font-size: 20px;"><strong>Design Thinking is about knowing how to find the answer to your question</strong></p>
-						<p style="font-size: 20px;">Design Thinking was  pioneered at Stanford University's Hasso Plattner Institute of Design. Global companies like Hyatt, Victoria's Secret and SAP use design thinking to expand their business, and so do small businesses and nonprofits.</p>
+						<p style="font-size: 20px;">Design Thinking was  pioneered at Stanford University's Hasso Plattner Institute of Design. Global companies like Apple, Google and BMW use design thinking to expand their business, as do small businesses and nonprofits.</p>
             <p style="font-size: 20px">Your users can help you save money and create better products and services. Design thinking teaches you to harness their input and turn it into success.</p>
 			    </div>
 			  </div>
@@ -122,11 +122,9 @@
         </div>
 
 			</div>
-    </br>
-    <hr>
 		</div>
 	</div>
-  <div class="row">
+<!-- <div class="row">
     </br>
     <div class="col-lg-12 text-center"><h1 style="font-size: 30px; font-weight: 700;">Event Partners</h1>
     </div>
@@ -152,7 +150,7 @@
       <p>The LOOP is a non-profit impact accelerator based in San Francisco. The LOOP’s programmes build ideas, skills and coalitions in support of social innovation and entrepreneurship.
 
       In Italy, The LOOP is collaborating with Treviso Campus of Università Ca’ Foscari on an Urban Innovation Bootcamp. The Bootcamp is an 8-week programme, where young local entrepreneurs and university students work together to scale innovative urban products and services with the potential to bring benefits to Treviso and its citizens.</p>
-  </div>
+  </div>-->
 </div>
 
 <!-- CONTENT 3 -->
