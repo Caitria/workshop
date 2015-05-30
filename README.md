@@ -7,10 +7,25 @@
 
 ## Running
 
+### Setup
+
 ```bash
 $ mix deps.get
 $ npm install
+$ mix do ecto.create, ecto.migrate
+```
+
+### Development
+
+```bash
 $ mix phoenix.server
+```
+
+### Production
+
+```bash
+$ mix phoenix.digest
+$ MIX_ENV=prod mix phoenix.server
 ```
 
 ## Deploying to Heroku
