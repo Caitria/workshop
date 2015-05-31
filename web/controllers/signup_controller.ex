@@ -1,16 +1,12 @@
 defmodule Workshop.SignupController do
   use Workshop.Web, :controller
 
-  plug :validate
   plug :action
 
-  def validate(conn, _params) do
+  def index(conn, params) do
+    IO.inspect Dict.get(params, "lang", "en")
     conn
-  end
-
-  def index(conn, _params) do
-    conn
-    |> render("index.html")
+    |> render("index.html", lang: Dict.get(params, "lang", "en"))
   end
 
   def signup(conn, _params) do
@@ -24,4 +20,5 @@ defmodule Workshop.SignupController do
     |> put_flash(:info, "You've successfully signed up!")
     |> render("index.html")
   end
+
 end

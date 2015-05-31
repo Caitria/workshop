@@ -34,6 +34,7 @@ defmodule Workshop.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_live_reload, "~> 0.4"},
      {:phoenix_html, "~> 1.0"},
+     {:linguist, "~> 0.1"},
      {:cowboy, "~> 1.0"},
      {:httpoison, "~> 0.6"},
      {:poison, "~> 1.4.0"}]
