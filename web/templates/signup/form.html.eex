@@ -9,9 +9,9 @@
 	</label>
 
   <%= select f, :workshop, [
-      nil: "Select your workshop",
-      entrepreneur: "Friday July 24, 2015 - Entrepreneurs $45",
-      student: "July 25, 2015 - University Students & Entrepreneurs  $45"] %>
+      {"Select your workshop", nil},
+      {"Friday July 24, 2015 - Entrepreneurs $45", :entrepreneur},
+      {"July 25, 2015 - University Students & Entrepreneurs $45", :student}] %>
   
   <%= submit "sign up" %>
 
