@@ -30,11 +30,6 @@ defmodule Workshop.SignupController do
       |> put_flash(:info, "You've successfully signed up! We'll be in touch.")
       |> redirect(to: "/")
     else
-      errors = for {attr, message} <- changeset.errors do
-        [Phoenix.HTML.Form.humanize(attr), " ", message]
-      end
-      |> Enum.intersperse(", ")
-
       conn
       |> put_flash(:error, "We're having trouble with your signup info." <>
         " Please see the signup form for more information.")
