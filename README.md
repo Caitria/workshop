@@ -25,7 +25,7 @@ $ mix phoenix.server
 
 ```bash
 $ mix phoenix.digest
-$ MIX_ENV=prod mix phoenix.server
+$ DATABASE_URL="..." MIX_ENV=prod PORT=8000 mix phoenix.server
 ```
 
 ## Deploying to Heroku
