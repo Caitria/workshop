@@ -40,7 +40,7 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-lg visible-md">
           <div class="form1">
             <h2 class="blue"><i class="fa fa-pencil-square-o"></i> Reserve Your Place</h2>
-            <%= render("form.html", conn: @conn) %>
+            <%= render("form.html", conn: @conn, changeset: @changeset) %>
           </div>
         </div> <!-- visible lg - md -->
 
@@ -49,7 +49,7 @@
         <div class="col-lg-4 col-md-4 wow fadeInRight visible-sm visible-xs">
           <div class="form2">
             <h2 class="blue">Reserve Your Place</h2>
-            <%= render("form.html", conn: @conn) %>
+            <%= render("form.html", conn: @conn, changeset: @changeset) %>
           </div>
         </div> <!-- visible lg - md -->
 			</div>

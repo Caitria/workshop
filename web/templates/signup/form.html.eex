@@ -1,7 +1,20 @@
-<%= form_for @conn, "/signup", [name: :participant], fn f -> %>
-  <%= text_input f, :name, value: "name" %>
-  <%= text_input f, :email, value: "email" %>
-  <%= text_input f, :occupation, value: "occupation" %>
+<%= form_for @changeset, "/signup", [name: :participant], fn f -> %>
+
+  <%= if f.errors != [] do %>
+    <div class="alert alert-danger">
+      <p>Please check the errors below:</p>
+      <ul>
+        <%= for {attr, message} <- f.errors do %>
+          <li><%= humanize(attr) %> <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= text_input f, :name, placeholder: "Name" %>
+  <%= text_input f, :email, placeholder: "Email"%>
+  <%= text_input f, :occupation, placeholder: "Occupation" %>
+
 	Instruction in English.
 	<br />
 	<label>
@@ -9,11 +22,11 @@
 	</label>
 
   <%= select f, :workshop, [
-      nil: "Select your workshop",
-      "sept-5":  "Sat September 5th, 2015 Venezia -  €200",
-      "sept-12": "Sat September 12th, 2015 Treviso - €200",
-      "sept-19": "Sat September 19th, 2015 Venezia - €200",
-      "sept-26": "Sat September 26th, 2015 Treviso - €200"] %>
+      {"Select your workshop", nil},
+      {"Sat September 5th, 2015 Venezia -  €200", "sept-5"},
+      {"Sat September 12th, 2015 Treviso - €200", "sept-12"},
+      {"Sat September 19th, 2015 Venezia - €200", "sept-19"},
+      {"Sat September 26th, 2015 Treviso - €200", "sept-26"}] %>
   
   <%= submit "sign up" %>
 

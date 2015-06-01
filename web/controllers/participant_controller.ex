@@ -24,24 +24,10 @@ defmodule Workshop.ParticipantController do
       Repo.insert(changeset)
 
       conn
-      |> put_flash(:info, "Participant created successfully.")
+      |> put_flash(:info, "You've successfully signed up!")
       |> redirect(to: participant_path(conn, :index))
     else
       render(conn, "new.html", changeset: changeset)
-    end
-  end
-
-  def signup(conn, %{"participant" => participant_params}) do
-    changeset = Participant.changeset(%Participant{}, participant_params)
-
-    if changeset.valid? do
-      Repo.insert(changeset)
-
-      conn
-      |> put_flash(:info, "Participant created successfully.")
-      |> redirect(to: "/success")
-    else
-      render(conn, "/", changeset: changeset)
     end
   end
 
