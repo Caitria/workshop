@@ -1,10 +1,23 @@
-<%= form_for @conn, "/signup", [name: :participant], fn f -> %>
+<%= form_for @changeset, "/signup", [name: :participant], fn f -> %>
+
+  <%= if f.errors != [] do %>
+    <div class="alert alert-danger">
+      <p>Please check the errors below:</p>
+      <ul>
+        <%= for {attr, message} <- f.errors do %>
+          <li><%= humanize(attr) %> <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <%= text_input f, :name,
-      value: Workshop.I18n.t_en(@lang, "form.labels.name") %>
+      placeholder: Workshop.I18n.t_en(@lang, "form.labels.name") %>
   <%= text_input f, :email,
-      value: Workshop.I18n.t_en(@lang, "form.labels.email") %>
+      placeholder: Workshop.I18n.t_en(@lang, "form.labels.email") %>
   <%= text_input f, :occupation,
-      value: Workshop.I18n.t_en(@lang, "form.labels.occupation") %>
+      placeholder: Workshop.I18n.t_en(@lang, "form.labels.occupation") %>
+
   <%= Workshop.I18n.t_en(@lang, "form.english") %>
 	<br />
 	<label>

@@ -12,14 +12,11 @@ defmodule Workshop.Router do
     pipe_through :browser
 
     get "/", SignupController, :index
-    get "/success", SignupController, :success
-
-    post "/signup", ParticipantController, :signup
-
+    post "/signup", SignupController, :signup
   end
 
-  # scope "/admin", Workshop do
-  #   resources "/participants", ParticipantController, only: [:index]
-  # end
+  scope "/admin", Workshop do
+    resources "/participants", ParticipantController, only: [:index]
+  end
 
 end

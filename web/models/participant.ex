@@ -22,5 +22,8 @@ defmodule Workshop.Participant do
   def changeset(model, params \\ nil) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> validate_length(:name, min: 2)
+    |> validate_length(:occupation, min: 2)
+    |> validate_format(:email, ~r/@/)
   end
 end

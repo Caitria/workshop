@@ -59,7 +59,7 @@
           <p class="lead">
             <%= Workshop.I18n.t_en(@lang, "form.ticket") %>
           </p>
-          <%= render("form.html", conn: @conn, lang: @lang) %>
+          <%= render("form.html", conn: @conn, lang: @lang, changeset: @changeset) %>
         </div>
       </div> <!-- visible lg - md -->
 
@@ -72,7 +72,7 @@
           <p class="lead">
             <%= Workshop.I18n.t_en(@lang, "form.ticket") %>
           </p>
-          <%= render("form.html", conn: @conn, lang: @lang) %>
+          <%= render("form.html", conn: @conn, lang: @lang, changeset: @changeset) %>
         </div>
       </div> <!-- visible lg - md -->
 		</div>
