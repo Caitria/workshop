@@ -7,10 +7,25 @@
 
 ## Running
 
+### Setup
+
 ```bash
 $ mix deps.get
 $ npm install
+$ mix do ecto.create, ecto.migrate
+```
+
+### Development
+
+```bash
 $ mix phoenix.server
+```
+
+### Production
+
+```bash
+$ mix phoenix.digest
+$ DATABASE_URL="..." MIX_ENV=prod PORT=8000 mix phoenix.server
 ```
 
 ## Deploying to Heroku

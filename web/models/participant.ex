@@ -19,8 +19,11 @@ defmodule Workshop.Participant do
   If `params` are nil, an invalid changeset is returned
   with no validation performed.
   """
-  def changeset(model, params \\ nil) do
+  def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> validate_length(:name, min: 2)
+    |> validate_length(:occupation, min: 2)
+    |> validate_format(:email, ~r/@/)
   end
 end
