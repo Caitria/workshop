@@ -1,7 +1,20 @@
-<%= form_for @conn, "/signup", [name: :participant], fn f -> %>
-  <%= text_input f, :name, value: "name" %>
-  <%= text_input f, :email, value: "email" %>
-  <%= text_input f, :occupation, value: "occupation" %>
+<%= form_for @changeset, "/signup", [name: :participant], fn f -> %>
+
+  <%= if f.errors != [] do %>
+    <div class="alert alert-danger">
+      <p>Please check the errors below:</p>
+      <ul>
+        <%= for {attr, message} <- f.errors do %>
+          <li><%= humanize(attr) %> <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= text_input f, :name, placeholder: "Name" %>
+  <%= text_input f, :email, placeholder: "Email"%>
+  <%= text_input f, :occupation, placeholder: "Occupation" %>
+
 	Instruction in English, comprehension required but groups may choose to work in Spanish.
 	<br />
 	<label>

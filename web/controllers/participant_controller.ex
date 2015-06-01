@@ -4,7 +4,7 @@ defmodule Workshop.ParticipantController do
   alias Workshop.Participant
   alias Workshop.Repo
 
-  plug :scrub_params, "participant" when action in [:create, :update, :signup]
+  plug :scrub_params, "participant" when action in [:create, :update]
   plug :action
 
   def index(conn, _params) do
@@ -28,33 +28,6 @@ defmodule Workshop.ParticipantController do
       |> redirect(to: participant_path(conn, :index))
     else
       render(conn, "new.html", changeset: changeset)
-    end
-  end
-
-  def signup(conn, %{"participant" => %{"confirm" => confirm}})
-      when confirm != "true" do
-    conn
-    |> put_flash(:error, "You must acknowledge that instruction is in English.")
-    |> redirect(to: "/")
-  end
-
-  def signup(conn, %{"participant" => participant_params}) do
-    changeset = Participant.changeset(%Participant{}, participant_params)
-
-    if changeset.valid? do
-      Repo.insert(changeset)
-      conn
-      |> put_flash(:info, "You've successfully signed up! We'll be in touch.")
-      |> redirect(to: "/")
-    else
-      errors = for {attr, message} <- changeset.errors do
-        [Phoenix.HTML.Form.humanize(attr), " ", message]
-      end
-      |> Enum.intersperse(", ")
-
-      conn
-      |> put_flash(:error, "We're having trouble with your signup info: #{errors}.")
-      |> redirect(to: "/", changeset: changeset)
     end
   end
 

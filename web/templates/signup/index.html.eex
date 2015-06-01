@@ -41,7 +41,7 @@
           <div class="form1">
             <h2 class="blue"><i class="fa fa-pencil-square-o"></i> Reserve Your Place</h2>
             <p>Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
-            <%= render("form.html", conn: @conn) %>
+            <%= render("form.html", conn: @conn, changeset: @changeset) %>
           </div>
         </div> <!-- visible lg - md -->
 
@@ -51,7 +51,7 @@
           <div class="form2">
             <h2 class="blue">Reserve Your Place</h2>
             <p class="lead">Signing up reserves you a $45 ticket to the workshop day of your choice.</p>
-            <%= render("form.html", conn: @conn) %>
+            <%= render("form.html", conn: @conn, changeset: @changeset) %>
           </div>
         </div> <!-- visible lg - md -->
 			</div>
