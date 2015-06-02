@@ -292,8 +292,8 @@ defmodule Workshop.I18n do
   @doc """
   Translate for the given locale, fallback to `#{@default_locale}`.
   """
-  def t_en(locale, key, bindings \\ []) do
-    case t(locale, key, bindings) do
+  def tr(conn, key, bindings \\ []) do
+    case Workshop.LocalePlug.get(conn) |> t(key, bindings) do
       {:ok, translation}        -> translation
       {:error, :no_translation} -> t!(@default_locale, key, bindings)
     end

@@ -10,7 +10,7 @@ defmodule Workshop.SignupController do
   def index(conn, params) do
     changeset = Participant.changeset(%Participant{})
     conn
-    |> render("index.html", lang: Dict.get(params, "lang", "en"), changeset: changeset)
+    |> render("index.html", changeset: changeset)
   end
 
   def signup(conn, %{"participant" => %{"confirm" => confirm} = participant_params})
@@ -23,7 +23,6 @@ defmodule Workshop.SignupController do
 
   def signup(conn, %{"participant" => participant_params}) do
     changeset = Participant.changeset(%Participant{}, participant_params)
-
     if changeset.valid? do
       Repo.insert(changeset)
       conn

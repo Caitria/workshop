@@ -6,6 +6,7 @@ defmodule Workshop.Router do
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
+    plug Workshop.LocalePlug, "en"
   end
 
   scope "/", Workshop do

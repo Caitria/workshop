@@ -12,24 +12,24 @@
   <% end %>
 
   <%= text_input f, :name,
-      placeholder: Workshop.I18n.t_en(@lang, "form.labels.name") %>
+      placeholder: Workshop.I18n.tr(@conn, "form.labels.name") %>
   <%= text_input f, :email,
-      placeholder: Workshop.I18n.t_en(@lang, "form.labels.email") %>
+      placeholder: Workshop.I18n.tr(@conn, "form.labels.email") %>
   <%= text_input f, :occupation,
-      placeholder: Workshop.I18n.t_en(@lang, "form.labels.occupation") %>
+      placeholder: Workshop.I18n.tr(@conn, "form.labels.occupation") %>
 
-  <%= Workshop.I18n.t_en(@lang, "form.english") %>
+  <%= Workshop.I18n.tr(@conn, "form.english") %>
 	<br />
 	<label>
     <%= checkbox f, :confirm %>
-    <%= Workshop.I18n.t_en(@lang, "form.understand") %>
+    <%= Workshop.I18n.tr(@conn, "form.understand") %>
 	</label>
 
   <%= select f, :workshop, [
-      {Workshop.I18n.t_en(@lang, "form.workshop.default"), nil},
-      {Workshop.I18n.t_en(@lang, "form.workshop.entrepreneur"), :entrepreneur},
-      {Workshop.I18n.t_en(@lang, "form.workshop.student"), :student}] %>
+      {Workshop.I18n.tr(@conn, "form.workshop.default"), nil},
+      {Workshop.I18n.tr(@conn, "form.workshop.entrepreneur"), :entrepreneur},
+      {Workshop.I18n.tr(@conn, "form.workshop.student"), :student}] %>
   
-  <%= submit Workshop.I18n.t_en(@lang, "form.signup") %>
+  <%= submit Workshop.I18n.tr(@conn, "form.signup") %>
 
 <% end %>

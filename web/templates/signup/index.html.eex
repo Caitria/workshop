@@ -4,10 +4,10 @@
     <div class="row">
       <div class="caption col-lg-12">
         <h1 style="background-color: #27ade4; padding: 5px;">
-          <%= Workshop.I18n.t_en(@lang, "index.header.title") %>
+          <%= Workshop.I18n.tr(@conn, "index.header.title") %>
         </h1>
         <p style="background-color: #27ade4; padding: 5px;">
-          <%= Workshop.I18n.t_en(@lang, "index.header.subtitle") %>
+          <%= Workshop.I18n.tr(@conn, "index.header.subtitle") %>
         </p>
       </div>
     </div>
@@ -22,28 +22,28 @@
 
       <div class="col-lg-8 col-md-8 wow fadeInLeft">
         <h3 class="uppercase">
-          <%= Workshop.I18n.t_en(@lang, "index.body.innovation.subheader") %>
+          <%= Workshop.I18n.tr(@conn, "index.body.innovation.subheader") %>
         </h3>
-        <h2><%= Workshop.I18n.t_en(@lang, "index.body.innovation.header") %></h2>
-        <p><%= Workshop.I18n.t_en(@lang, "index.body.innovation.body") %></p>
+        <h2><%= Workshop.I18n.tr(@conn, "index.body.innovation.header") %></h2>
+        <p><%= Workshop.I18n.tr(@conn, "index.body.innovation.body") %></p>
         <div class="row">
           <div class="col-lg-6">
 						<img src="<%= static_path(@conn, "/images/floor.jpg") %>" style="max-width: 100%;">
             <h3><i class="fa fa-2x fa-users"></i>
-              <%= Workshop.I18n.t_en(@lang, "index.body.great_ideas.header") %>
+              <%= Workshop.I18n.tr(@conn, "index.body.great_ideas.header") %>
             </h3>
             <p>
-              <%= Workshop.I18n.t_en(@lang, "index.body.great_ideas.body") %>
+              <%= Workshop.I18n.tr(@conn, "index.body.great_ideas.body") %>
             </p>
           </div>
 
           <div class="col-lg-6">
 						<img src="/images/group.jpg" style="max-width: 100%;">
             <h3><i class="fa fa-2x fa-plus-circle"></i>
-              <%= Workshop.I18n.t_en(@lang, "index.body.skills.header") %>
+              <%= Workshop.I18n.tr(@conn, "index.body.skills.header") %>
             </h3>
             <p>
-              <%= Workshop.I18n.t_en(@lang, "index.body.skills.body") %>
+              <%= Workshop.I18n.tr(@conn, "index.body.skills.body") %>
             </p>
           </div>
         </div>
@@ -54,12 +54,12 @@
       <div class="col-lg-4 col-md-4 wow fadeInRight visible-lg visible-md">
         <div class="form1">
           <h2 class="blue">
-            <%= Workshop.I18n.t_en(@lang, "form.reserve") %>
+            <%= Workshop.I18n.tr(@conn, "form.reserve") %>
           </h2>
           <p class="lead">
-            <%= Workshop.I18n.t_en(@lang, "form.ticket") %>
+            <%= Workshop.I18n.tr(@conn, "form.ticket") %>
           </p>
-          <%= render("form.html", conn: @conn, lang: @lang, changeset: @changeset) %>
+          <%= render("form.html", conn: @conn, lang: @conn, changeset: @changeset) %>
         </div>
       </div> <!-- visible lg - md -->
 
@@ -67,12 +67,12 @@
       <div class="col-lg-4 col-md-4 wow fadeInRight visible-sm visible-xs">
         <div class="form2">
           <h2 class="blue">
-            <%= Workshop.I18n.t_en(@lang, "form.reserve") %>
+            <%= Workshop.I18n.tr(@conn, "form.reserve") %>
           </h2>
           <p class="lead">
-            <%= Workshop.I18n.t_en(@lang, "form.ticket") %>
+            <%= Workshop.I18n.tr(@conn, "form.ticket") %>
           </p>
-          <%= render("form.html", conn: @conn, lang: @lang, changeset: @changeset) %>
+          <%= render("form.html", conn: @conn, lang: @conn, changeset: @changeset) %>
         </div>
       </div> <!-- visible lg - md -->
 		</div>
@@ -99,82 +99,82 @@
 	<div class="col-lg-8 col-lg-offset-2">
 		<br />
 		<h2 style="text-align: center;">
-      <%= Workshop.I18n.t_en(@lang, "index.body.workshop.header") %>
+      <%= Workshop.I18n.tr(@conn, "index.body.workshop.header") %>
     </h2>
 		<br />
 		<p>*Workshop instruction in English, comprehension required.
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.header") %></th>
-						<th><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.header") %></th>
+						<th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.header") %></th>
+						<th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.header") %></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.intro.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.intro.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.intro.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_2") %></li>
 							</ul>
 						</td>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.prototype.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.prototype.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.prototype.item_2") %></li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.empathize.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.empathize.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.empathize.item_2") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.empathize.item_3") %></li>
-							</ul>
-						</td>
-						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.test.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.test.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.test.item_2") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.test.item_3") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_2") %></li>
 							</ul>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.define.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.define.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.define.item_2") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.define.item_3") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_3") %></li>
 							</ul>
 						</td>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.storytelling.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.storytelling.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.storytelling.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_3") %></li>
 							</ul>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.ideate.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.ideate.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_1.ideate.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_3") %></li>
 							</ul>
 						</td>
 						<td>
-							<h5><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.debrief.header") %></h5>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.header") %></h5>
 							<ul>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.debrief.item_1") %></li>
-								<li><%= Workshop.I18n.t_en(@lang, "index.body.workshop.part_2.debrief.item_2") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_2") %></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.header") %></h5>
+							<ul>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_2") %></li>
+							</ul>
+						</td>
+						<td>
+							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.header") %></h5>
+							<ul>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_1") %></li>
+								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_2") %></li>
 							</ul>
 						</td>
 					</tr>
@@ -213,7 +213,7 @@
                 Innovation is about meeting the challenges that we encounter in our lives.
             </strong></p>
 						<p style="font-size: 20px;">
-              <%= Workshop.I18n.t_en(@lang, "index.body.yachay.body") %>
+              <%= Workshop.I18n.tr(@conn, "index.body.yachay.body") %>
             </p>
 			    </div>
 			  </div>
@@ -232,39 +232,39 @@
 				<div class="col-lg-4 col-md-4  text-center wow fadeInDown" data-wow-delay="0.2s">
 					<i class="fa fa-4x fa-search blue feature"></i>
 					<h4 class="uppercase">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.yachay.header") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.yachay.header") %>
           </h4>
 					<p>
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.yachay.body") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.yachay.body") %>
           </p>
 					<a class="button button-small button-dark" href="http://www.yachay.gob.ec/">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.more") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.more") %>
           </a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.4s">
 					<i class="fa fa-4x fa-flask blue feature"></i>
 					<h4 class="uppercase">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.design.header") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.design.header") %>
           </h4>
 					<p>
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.design.body") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.design.body") %>
           </p>
 					<a class="button button-small button-dark" href="http://dschool.stanford.edu/our-point-of-view/">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.more") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.more") %>
           </a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.6s">
 					<i class="fa fa-4x fa-rocket blue feature"></i>
 					<h4 class="uppercase">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.try.header") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.try.header") %>
           </h4>
 					<p>
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.try.body") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.try.body") %>
           </p>
 					<a class="button button-small button-dark" href="http://dschool.stanford.edu/our-point-of-view/">
-            <%= Workshop.I18n.t_en(@lang, "index.body.features.more") %>
+            <%= Workshop.I18n.tr(@conn, "index.body.features.more") %>
           </a>
 				</div>
 
@@ -278,7 +278,7 @@
 <section id="content2" class="wow fadeInDown">
 	<div class="container">
 		<div class="row">
-			<h2><%= Workshop.I18n.t_en(@lang, "index.body.instructors.header") %></h2>
+			<h2><%= Workshop.I18n.tr(@conn, "index.body.instructors.header") %></h2>
 			<br />
 			<div class="col-lg-3 col-md-3">
 				<img src="/images/co.jpg" style="max-width: 75%;">
@@ -286,7 +286,7 @@
 			<div class="col-lg-9 col-md-9">
 			  <h3>Caitria O'Neill</h3>
 			  <p>
-          <%= Workshop.I18n.t_en(@lang, "index.body.instructors.caitria") %>
+          <%= Workshop.I18n.tr(@conn, "index.body.instructors.caitria") %>
         </p>
 			</div>
 		</div>
