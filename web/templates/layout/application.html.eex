@@ -40,10 +40,13 @@
 	<nav class="navbar navbar-custom" role="navigation">
     <div class="container">
       <div class="navbar-header">
+				<div class="row">
+					<img src="<%= static_path(@conn, "/images/cafosc_logo.png") %>" style="max-width: 200px; padding: 5px;">
+				</div>
         <h2 class="navbar-brand">Sept 5th and 19th, Venezia - Sept 12th and 26th, Treviso</h2>
       </div>
-
-      <p class="phone"> Questions? hello@pocketknife.io</p>
+			<br />
+      <p class="phone" style="top=15px;"> Questions? Info@jointheloop.org</p>
     </div>
 	</nav>
 
@@ -52,14 +55,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-12">
-          <p class="small pull-left">Questions? hello@pocketknife.io. Photo credits, Emi Kolawole.</p>
+          <p class="small pull-left">Questions? Info@jointheloop.org. Photo credits, Emi Kolawole.</p>
           <div class="social-likes pull-right">
             <div class="facebook" title="Share link on Facebook">Facebook</div>
             <div class="twitter" data-via="envato_support" title="Share link on Twitter">Twitter</div>
             <div class="plusone" title="Share link on Google+">Google+</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -154,7 +154,7 @@ section {
 }
 
 #content2 i {
-	color:#27ade4;
+	color:#A41034;
 	vertical-align:middle;
 }
 
@@ -224,7 +224,7 @@ section {
 
 footer {
 	color:#ffffff;
-	background:#27ade4;
+	background:#A41034;
 	padding:30px 0 10px 0;
 	margin-bottom:0;
 }
@@ -316,7 +316,7 @@ footer small {
 	position:absolute;
 	top:-80px;
 	padding:15px;
-	box-shadow:1px 1px 20px rgba(39, 173, 228, 0.5);
+	box-shadow:1px 1px 20px rgba(201,136,153,1);
 }
 
 
@@ -355,7 +355,7 @@ input, select {
 .spinner {
   width: 30px;
   height: 30px;
-  background-color: #27ade4;
+  background-color: #A41034;
   display:table-cell;
   vertical-align:middle;
   position:absolute;

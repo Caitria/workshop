@@ -103,54 +103,38 @@
 				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.4s">
 					<i class="fa fa-4x fa-flask blue feature"></i>
 					<h4 class="uppercase">Design Thinking</h4>
-					<p>A five-step framework for innovation, pioneered at Stanford's d.school.</p>
+					<p>A five-step framework for innovation, pioneered at Stanford's d.school. Tools for businesses and entrepreneurs.</p>
 					<a class="button button-small button-dark" href="http://dschool.stanford.edu/our-point-of-view/">Read more</a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 text-center wow fadeInDown" data-wow-delay="0.6s">
 					<i class="fa fa-4x fa-rocket blue feature"></i>
 					<h4 class="uppercase">Try it out!</h4>
-					<p>Take the d.school's Virtual Crash Course to get a taste of the workshop.</p>
+					<p>Take the d.school's Virtual Crash Course to get a taste of the workshop and methodology.</p>
 					<a class="button button-small button-dark" href="https://dschool.stanford.edu/dgift/">Read more</a>
 				</div>
 
         <div class="col-lg-4 col-md-4  text-center wow fadeInDown" data-wow-delay="0.2s">
           <i class="fa fa-4x fa-search blue feature"></i>
           <h4 class="uppercase">Innovation In Veneto</h4>
-          <p>Università Ca' Foscari jumpstarts innovation in Venezia and Treviso.</p>
-          <a class="button button-small button-dark" href="http://www.jointheloop.org/#!the-bootcamp-in-italy/cvuc/">Read more</a>
+          <p>The Ca’ Foscari University Campus in Treviso jumpstarts innovation in Venezia and Treviso. </p>
+          <a class="button button-small button-dark" href="http://trevisobootcamp.wix.com/trevisobootcamp">Read more</a>
         </div>
 
 			</div>
 		</div>
 	</div>
-<!-- <div class="row">
-    </br>
-    <div class="col-lg-12 text-center"><h1 style="font-size: 30px; font-weight: 700;">Event Partners</h1>
-    </div>
-  </div>
-  <div class="row">
-    </br>
-    <div class="col-lg-3 col-lg-offset-1 col-md-2 col-md-offset-1">
-      <img src="<%= static_path(@conn, "/images/cafosc.jpg") %>" style="max-width: 100px;">
-    </div>
-    <div class="col-lg-8 col-md-8">
-      <h3>University Ca' Foscari</h3>
-      <p>Università Ca'Foscari Venezia (Ca' Foscari University of Venice) is committed to innovation and local sustainability. Founded in 1868, it was first educational institution in Italy to offer higher education in commerce and economics. The University has about 20,000 enrolled students and offers a wide range of subjects in 4 main scientific-cultural areas: economics, languages, sciences and humanities. Ca' Foscari University runs 15 First Cycle Degree Programmes and 29 Second Cycle Degree Programmes, 39 Specialist Master’s Programmes and 14 Research Doctorates.</p>
-    </div>
-  </div>
 
 <div class="row">
-  </br>
+  <br />
+  <br />
   <div class="col-lg-3 col-lg-offset-1 col-md-2 col-md-offset-1">
-    <img src="<%= static_path(@conn, "/images/bot.png") %>" style="max-width: 100px;">
+    <img src="<%= static_path(@conn, "/images/theloop.png") %>" style="max-width: 200px;">
   </div>
   <div class="col-lg-8 col-md-8">
-    <h3>The Loop</h3>
-      <p>The LOOP is a non-profit impact accelerator based in San Francisco. The LOOP’s programmes build ideas, skills and coalitions in support of social innovation and entrepreneurship.
-
-      In Italy, The LOOP is collaborating with Treviso Campus of Università Ca’ Foscari on an Urban Innovation Bootcamp. The Bootcamp is an 8-week programme, where young local entrepreneurs and university students work together to scale innovative urban products and services with the potential to bring benefits to Treviso and its citizens.</p>
-  </div>-->
+      <h3>Innovators in Development</h3>
+      <p>The LOOP is a non-profit impact accelerator based in San Francisco. The LOOP’s programmes build ideas, skills and coalitions in support of social innovation and entrepreneurship. The LOOP is a non-profit impact accelerator based in San Francisco. We build innovation skills through methods like Design Thinking, Lean Startup and Business Model Canvas. In Italy, The LOOP is partnering with the Ca’ Foscari University Campus in Treviso to run The Urban Innovation Bootcamp due to start in October 2015. For more information, please visit:<a href="http"//www.jointheloop.org" /> www.jointheloop.org</a></p>
+  </div>
 </div>
 
 <!-- CONTENT 3 -->
