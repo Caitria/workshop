@@ -16,7 +16,7 @@ defmodule Workshop.I18n do
 
       header: [
         title: "Design Thinking Workshops",
-        subtitle: "Experience Stanford Universities" <>
+        subtitle: "Experience Stanford University's" <>
           " ‘design thinking’ approach to innovation."
       ],
 
@@ -48,8 +48,25 @@ defmodule Workshop.I18n do
             " testing a prototype."
         ],
 
+        friday: [
+          date: "Friday, July 24th",
+          header: "Entrepreneur/Professionals",
+          body: "The decisions you make are important ones - they shape" <>
+            " your company's products and services. Design thinking breaks" <>
+            " the innovation lifecycle into five parts, and this workshop" <>
+            " will teach you the skills you need at each step to apply to" <>
+            " your own work."
+        ],
+
+        saturday: [
+          date: "Saturday, July 25th",
+          header: "University Students",
+          body: "Maybe you have an idea already and you're looking figuring out how to make it real. Maybe you're curious about learning how 'innovation' really works. This workshop will teach you hireable skills through a hands-on innovation sprint. Experience how great ideas are made."
+        ],
+
         workshop: [
           header: "Workshop Overview",
+          english: "*Workshop instruction in English, comprehension required.",
           part_1: [
             header: "Part 1",
             intro: [
@@ -102,7 +119,8 @@ defmodule Workshop.I18n do
         ],
 
         yachay: [
-          header: "Innovation is about meeting the challenges that we" <>
+          subheader: "Your design journey starts here",
+          bodyheader: "Innovation is about meeting the challenges that we" <>
            " encounter in our lives.",
           body: "Workshop participants will work in small groups to tackle some of Ecuador's most pressing issues. They'll be doing this at the heart of the country's defenses. Yachay is a community of business and education that works to understand its challenges and opportunities. You will be addressing the same issues, and your group's ideas can help The City of Knowledge respond."
         ],
@@ -128,7 +146,13 @@ defmodule Workshop.I18n do
 
         instructors: [
           header: "Workshop Instruction",
-          caitria: "Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University."
+          cutoff: "Subject to workshop size",
+          caitria: "Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University.",
+          janka: "David is a Design Thinking Consultant Teaching Faculty at Stanford University's d.school. He's led workshops and done strategic work for a diverse group of clients, including Facebook, PepsiCo, Tokyo Institute of Technology and Stanford Graduate School of Business. He is a graduate of UNC Chapel Hill and Stanford Medical School.",
+          additional: [
+            header: "Additional Instructors TBD",
+            body: "Guest facilitators from Yachay will also be featured at the event. Check back here for updates."
+          ]
         ]
 
       ]
@@ -190,8 +214,22 @@ defmodule Workshop.I18n do
             " y testeo del prototipo. Aprende haciendo"
         ],
 
+        friday: [
+          date: "Viernes 24 de julio, 2015",
+          header: "Emprendedores y Profesionales",
+          body: "Las decisiones que tomas son importantes – ellas definen los productos y servicios de tu empresa. Design thinking divide el ciclo de vida de la innovación en cinco partes y este taller te brindará las destrezas que necesitas en cada paso para aplicarlo a tu propio trabajo."
+        ],
+
+        saturday: [
+          date: "Sábado 25 de julio, 2015",
+          header: "Estudiantes Universitarios",
+          body: "Probablemente ya tengas una idea y estás buscando la manera de llevarla a cabo.  Quizás tienes la curiosidad de aprender cómo funciona la innovación realmente. Este taller te brindará destrezas altamente deseadas a través de un entrenamiento práctico intensivo en innovación . Experimenta la manera en que las grandes ideas se realizan."
+        ],
+
+
         workshop: [
           header: "Agenda del programa",
+          english: "*El taller será dictado en inglés. Se requiere una buena comprensión de este idioma.",
           part_1: [
             header: "Parte 1",
             intro: [
@@ -206,7 +244,10 @@ defmodule Workshop.I18n do
               item_3: "práctica de entrevista a usuarios"
             ],
             define: [
-              header: "Definir"
+              header: "Definir (Define)",
+              item_1: "herramientas para entender la investigación dirigida al usuario",
+              item_2: "punto de vista/mapeo de usuarios",
+              item_3: "identificar una visión"
             ],
             ideate: [
               header: "Idear",
@@ -228,9 +269,9 @@ defmodule Workshop.I18n do
               item_3: "actualizando el prototipo"
             ],
             storytelling: [
-              header: "Storytelling",
-              item_1: "the elements of a memorable story",
-              item_2: "groups share their prototypes"
+              header: "Historias y anécdotas (Storytelling)",
+              item_1: "elementos de una historia memorable",
+              item_2: "Los grupos compartirán información sobre sus prototipos"
             ],
             debrief: [
               header: "Entrevista (Debrief)",
@@ -241,8 +282,8 @@ defmodule Workshop.I18n do
         ],
 
         yachay: [
-          header: "Innovation is about meeting the challenges that we" <>
-           " encounter in our lives.",
+          subheader: "Tu viaje de diseño empieza aquí",
+          bodyheader: "Innovar es hacer  frente a los retos con los que nos encontramos en nuestra vida",
           body: "Los talleres de design thinking tratarán problemas" <>
             " reales para perfeccionar habilidades reales dentro del" <>
             " contexto ecuatoriano."
@@ -251,8 +292,7 @@ defmodule Workshop.I18n do
         features: [
           yachay: [
             header: "Yachay Ciudad del Conocimiento",
-            body: "Workshop host and Ecuadorian research, business and" <>
-              " educational hub."
+            body: "Yachay es la anfitriona del taller. La ciudad acoge importantes esfuerzos en  la investigación, negocios y educación del país."
           ],
           design: [
             header: "Design Thinking",
@@ -268,7 +308,13 @@ defmodule Workshop.I18n do
 
         instructors: [
           header: "Instructores",
-          caitria: "Estratega de diseño y mentora de innovación, fellow del Instituto Hasso Plattner de Diseño de la Universidad Stanford (d.school). Fundadora y CEO de Recovers.org, un compañía de base tecnológica internacionalmente reconocida en remediación de desastres naturales. Experiencia en entrenamiento y diseño para Lean Startup, Hyatt, Boys & Girls Club, Outset Medical. Su trabajo ha sido publicado en TED.com, FastCompany, Forbes entre otros. Ganadora del reconocimiento US White House Champion of Change por sus contribuciones en diseño en el campo de remediación y resiliencia de desastres. Graduada de Harvard University."
+          cutoff: "(Disponibilidad sujeta al número de participantes)",
+          caitria: "Estratega de diseño y mentora de innovación, fellow del Instituto Hasso Plattner de Diseño de la Universidad Stanford (d.school). Fundadora y CEO de Recovers.org, un compañía de base tecnológica internacionalmente reconocida en remediación de desastres naturales. Experiencia en entrenamiento y diseño para Lean Startup, Hyatt, Boys & Girls Club, Outset Medical. Su trabajo ha sido publicado en TED.com, FastCompany, Forbes entre otros. Ganadora del reconocimiento US White House Champion of Change por sus contribuciones en diseño en el campo de remediación y resiliencia de desastres. Graduada de Harvard University.",
+          janka: "David es un  consultor y docente en la d.school de la Universidad de Stanford. Ha dirigido talleres y realizado trabajo estratégico para un grupo diverso de clientes, incluyendo Facebook, PepsiCo, Instituto de Tecnología de Tokio y Stanford Graduate School of Business. Él es un graduado de la UNC Chapel Hill y la Escuela de Medicina de Stanford.",
+          additional: [
+            header: "Instructores adicionales (Por anunciar)",
+            body: "Facilitadores invitados de Yachay también participarán en el evento. Podrás encontrar las actualizaciones aquí."
+          ]
         ]
       ]
     ],

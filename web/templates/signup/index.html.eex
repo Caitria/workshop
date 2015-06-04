@@ -80,115 +80,128 @@
     <div class="row">
       <div class="col-lg-6 col-md-6  text-center wow fadeInDown" data-wow-delay="0.2s">
 				<img src="/images/boss.png" ; height="90px">
-				<h4 class="text-center">Friday, July 24th</h5>
-<h4 class="uppercase">Entrepreneur/Professionals</h4>
-<p>The decisions you make are important ones - they shape your company's products and services. Design thinking breaks the innovation lifecycle into five parts, and this workshop will teach you the skills you need at each step to apply to your own work.</p>
+				<h5 class="text-center">
+          <%= Workshop.I18n.tr(@conn, "index.body.friday.date") %>
+        </h5>
+        <h4 class="uppercase">
+          <%= Workshop.I18n.tr(@conn, "index.body.friday.header") %>
+        </h4>
+        <p>
+          <%= Workshop.I18n.tr(@conn, "index.body.friday.body") %>
+        </p>
+      </div>
 
-</div>
-
-<div class="col-lg-6 col-md-6 text-center wow fadeInDown" data-wow-delay="0.4s">
-  <img src="/images/bot.png" ; height="90px">
-	<h4 class="text-center">Saturday, July 25th</h5>
-<h4 class="uppercase">University Students</h4>
-<p>Maybe you have an idea already and you're looking figuring out how to make it real. Maybe you're curious about learning how 'innovation' really works. This workshop will teach you hireable skills through a hands-on innovation sprint. Experience how great ideas are made.</p>
-</div>
-<br />
-</div>
-<div class="row">
-	<br />
-	<div class="col-lg-8 col-lg-offset-2">
-		<br />
-		<h2 style="text-align: center;">
-      <%= Workshop.I18n.tr(@conn, "index.body.workshop.header") %>
-    </h2>
-		<br />
-		<p>*Workshop instruction in English, comprehension required.
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.header") %></th>
-						<th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.header") %></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_2") %></li>
-							</ul>
-						</td>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_2") %></li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_2") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_3") %></li>
-							</ul>
-						</td>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_2") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_3") %></li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_2") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_3") %></li>
-							</ul>
-						</td>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_2") %></li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_2") %></li>
-							</ul>
-						</td>
-						<td>
-							<h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.header") %></h5>
-							<ul>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_1") %></li>
-								<li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_2") %></li>
-							</ul>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-	</div>
-</div>
-</div>
-<br />
-<div class="row">
-	<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col sm-offset-3">
-		<img src="/images/sxswemi.jpg" style="max-width: 100%;">
-	</div>
-</div>
+      <div class="col-lg-6 col-md-6 text-center wow fadeInDown" data-wow-delay="0.4s">
+        <img src="/images/bot.png" ; height="90px">
+				<h5 class="text-center">
+          <%= Workshop.I18n.tr(@conn, "index.body.saturday.date") %>
+        </h5>
+        <h4 class="uppercase">
+          <%= Workshop.I18n.tr(@conn, "index.body.saturday.header") %>
+        </h4>
+        <p>
+          <%= Workshop.I18n.tr(@conn, "index.body.saturday.body") %>
+        </p>
+      </div>
+      <br />
+    </div>
+    <div class="row">
+	    <br />
+	    <div class="col-lg-8 col-lg-offset-2">
+		    <br />
+		    <h2 style="text-align: center;">
+          <%= Workshop.I18n.tr(@conn, "index.body.workshop.header") %>
+        </h2>
+		    <br />
+		    <p>
+          <%= Workshop.I18n.tr(@conn, "index.body.workshop.english") %>
+        </p>
+			    <table class="table table-striped">
+				    <thead>
+					    <tr>
+						    <th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.header") %></th>
+						    <th><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.header") %></th>
+					    </tr>
+				    </thead>
+				    <tbody>
+					    <tr>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.intro.item_2") %></li>
+							    </ul>
+						    </td>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.prototype.item_2") %></li>
+							    </ul>
+						    </td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_2") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.empathize.item_3") %></li>
+							    </ul>
+						    </td>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_2") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.test.item_3") %></li>
+							    </ul>
+						    </td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_2") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.define.item_3") %></li>
+							    </ul>
+						    </td>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.storytelling.item_2") %></li>
+							    </ul>
+						    </td>
+					    </tr>
+					    <tr>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_1.ideate.item_2") %></li>
+							    </ul>
+						    </td>
+						    <td>
+							    <h5><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.header") %></h5>
+							    <ul>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_1") %></li>
+								    <li><%= Workshop.I18n.tr(@conn, "index.body.workshop.part_2.debrief.item_2") %></li>
+							    </ul>
+						    </td>
+					    </tr>
+				    </tbody>
+			    </table>
+	    </div>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+	  <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col sm-offset-3">
+		  <img src="/images/sxswemi.jpg" style="max-width: 100%;">
+	  </div>
+  </div>
 </section>
 
 <!-- CONTENT 2 -->
@@ -197,8 +210,9 @@
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 			  <h3 class="text-center uppercase wow fadeInDown">Yachay, Imbabura, Ecuador</h3>
-			  <h2 class="text-center wow fadeInUp">Your design journey starts here</h2>
-
+			  <h2 class="text-center wow fadeInUp">
+					<%= Workshop.I18n.tr(@conn, "index.body.yachay.subheader") %>
+        </h2>
 
 			  <div class="row">
 			    <div class="col-lg-7 col-md-7 wow fadeInLeft">
@@ -210,7 +224,7 @@
 
 			    <div class="col-lg-5 col-md-5">
 			      <p style="font-size: 20px;"><strong>
-                Innovation is about meeting the challenges that we encounter in our lives.
+					      <%= Workshop.I18n.tr(@conn, "index.body.yachay.bodyheader") %>
             </strong></p>
 						<p style="font-size: 20px;">
               <%= Workshop.I18n.tr(@conn, "index.body.yachay.body") %>
@@ -297,13 +311,11 @@
 			</div>
 			<div class="col-lg-9 col-md-9">
 				<h3>David Janka</h3>
-				<p><i>Subject to workshop size</i></p>
+				<p><i>
+          <%= Workshop.I18n.tr(@conn, "index.body.instructors.cutoff") %>
+        </i></p>
 				<p>
-          David is a Design Thinking Consultant Teaching Faculty at Stanford
-          University's d.school. He's led workshops and done strategic work for
-          a diverse group of clients, including Facebook, PepsiCo, Tokyo
-          Institute of Technology and Stanford Graduate School of Business. He
-          is a graduate of UNC Chapel Hill and Stanford Medical School.
+          <%= Workshop.I18n.tr(@conn, "index.body.instructors.janka") %>
         </p>
 			</div>
 		</div>
@@ -313,8 +325,12 @@
 		<div class="col-lg-3 col-md-3"></div>
 		<div class="col-lg-9 col-md-9">
 			<div id="panel">
-				<h3>Additional Instructors TBD</h3>
-				<p>Guest facilitators from Yachay will also be featured at the event. Check back here for updates.</p>
+				<h3>
+          <%= Workshop.I18n.tr(@conn, "index.body.instructors.additional.header") %>
+        </h3>
+				<p>
+          <%= Workshop.I18n.tr(@conn, "index.body.instructors.additional.body") %>
+        </p>
 			</div>
 		</div>
 	</div>
