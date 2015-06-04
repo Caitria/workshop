@@ -64,10 +64,11 @@ section {
 	font-family:Montserrat;
 	font-size:25px;
 	font-weight:600;
-	text-transform:uppercase;
+	text-transform:uppercase;}
+
+.navbar-brand {
+	float: none;
 }
-
-
 
 /* TOP */
 
@@ -79,7 +80,7 @@ section {
 	min-height:400px;
 	color:#ffffff;
 	background-color:#d88da1;
-	background:url(/images/crowd.jpg) no-repeat fixed;
+	background:url(/images/yachay.jpg) no-repeat fixed;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;

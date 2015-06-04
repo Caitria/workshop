@@ -40,6 +40,7 @@
 	<nav class="navbar navbar-custom" role="navigation">
     <div class="container">
       <div class="navbar-header">
+				<img src="/images/designthinkinglogo.jpg" style="max-width: 250px; float: left; padding: 10px; margin-bottom; 15px;">
         <h2 class="navbar-brand">
           <%= Workshop.I18n.tr(@conn, "index.layout.navbar.brand") %>
         </h2>
@@ -64,11 +65,11 @@
             <%= Workshop.I18n.tr(@conn, "index.layout.navbar.contact") %>
             <%= Workshop.I18n.tr(@conn, "index.layout.credits") %>
           </p>
-          <div class="social-likes pull-right">
+          <!-- <div class="social-likes pull-right">
             <div class="facebook" title="Share link on Facebook">Facebook</div>
             <div class="twitter" data-via="envato_support" title="Share link on Twitter">Twitter</div>
             <div class="plusone" title="Share link on Google+">Google+</div>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
