@@ -23,7 +23,7 @@
 
   <%= select f, :workshop, [
       {"Select your workshop", nil},
-      {"Sat September 5th, 2015 Venezia -  €200", "sept-5"},
+      {"Sat September 5th, 2015 Venezia - €200", "sept-5"},
       {"Sat September 12th, 2015 Treviso - €200", "sept-12"},
       {"Sat September 19th, 2015 Venezia - €200", "sept-19"},
       {"Sat September 26th, 2015 Treviso - €200", "sept-26"}] %>
