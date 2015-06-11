@@ -116,8 +116,10 @@
 
         <div class="col-lg-4 col-md-4  text-center wow fadeInDown" data-wow-delay="0.2s">
           <i class="fa fa-4x fa-search blue feature"></i>
-          <h4 class="uppercase">Innovation In Veneto</h4>
-          <p>The Ca’ Foscari University Campus in Treviso jumpstarts innovation in Venezia and Treviso. </p>
+          <h4 class="uppercase">Urban Innovation</h4>
+          <p>
+            The Ca’Foscari University jumpstarts innovation for the city of Treviso.
+          </p>
           <a class="button button-small button-dark" href="http://trevisobootcamp.wix.com/trevisobootcamp">Read more</a>
         </div>
 
@@ -133,7 +135,7 @@
   </div>
   <div class="col-lg-8 col-md-8">
       <h3>Innovators in Development</h3>
-      <p>The LOOP is a non-profit impact accelerator based in San Francisco. The LOOP’s programmes build ideas, skills and coalitions in support of social innovation and entrepreneurship. The LOOP is a non-profit impact accelerator based in San Francisco. We build innovation skills through methods like Design Thinking, Lean Startup and Business Model Canvas. In Italy, The LOOP is partnering with the Ca’ Foscari University Campus in Treviso to run The Urban Innovation Bootcamp due to start in October 2015. For more information, please visit:<a href="http"//www.jointheloop.org" /> www.jointheloop.org</a></p>
+      <p>The LOOP is a non-profit impact accelerator based in San Francisco. The LOOP’s programmes build ideas, skills and coalitions in support of social innovation and entrepreneurship. The LOOP is a non-profit impact accelerator based in San Francisco. We build innovation skills through methods like Design Thinking, Lean Startup and Business Model Canvas. In Italy, The LOOP is partnering with the Ca’ Foscari University Campus in Treviso to run The Urban Innovation Bootcamp due to start in October 2015. For more information, please visit: <a href="http://www.jointheloop.org">www.jointheloop.org</a></p>
   </div>
 </div>
 

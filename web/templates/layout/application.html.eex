@@ -40,13 +40,10 @@
 	<nav class="navbar navbar-custom" role="navigation">
     <div class="container">
       <div class="navbar-header">
-				<div class="row">
-					<img src="<%= static_path(@conn, "/images/cafosc_logo.png") %>" style="max-width: 200px; padding: 5px;">
-				</div>
         <h2 class="navbar-brand">Sept 5th and 19th, Venezia - Sept 12th and 26th, Treviso</h2>
       </div>
 			<br />
-      <p class="phone" style="top=15px;"> Questions? Info@jointheloop.org</p>
+      <p class="phone"> Questions? info@jointheloop.org</p>
     </div>
 	</nav>
 
