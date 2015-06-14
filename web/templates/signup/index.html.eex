@@ -19,7 +19,7 @@
         <div class="col-lg-8 col-md-8 wow fadeInLeft">
           <h3 class="uppercase">Design Thinking Master Classes</h3>
           <h2>The Tools To Build Your Biggest Ideas</h2>
-          <p>Join us for a full-day workshop at Ca’ Foscari University in Venezia and Treviso, and learn Stanford University’s winning strategies for creating successful products and services. These intimate workshops will be facilitated by instructors from the heart of Silicon Valley and Stanford's own d.school classes.</p>
+          <p>Join us for a full-day workshop in Venezia and Treviso, and learn Stanford University’s winning strategies for creating successful products and services. These intimate workshops will be facilitated by instructors from the heart of Silicon Valley and Stanford's own d.school classes.</p>
           <div class="row">
           </br>
             <div class="col-lg-6">
@@ -118,7 +118,8 @@
           <i class="fa fa-4x fa-search blue feature"></i>
           <h4 class="uppercase">Urban Innovation</h4>
           <p>
-            The Ca’Foscari University jumpstarts innovation for the city of Treviso.
+            The LOOP and Ca’Foscari University jumpstart innovation for the city
+            of Treviso.
           </p>
           <a class="button button-small button-dark" href="http://trevisobootcamp.wix.com/trevisobootcamp">Read more</a>
         </div>
@@ -155,7 +156,7 @@
           <p>Caitria is a design strategist and innovation coach, and a former fellow/adjunct at Stanford’s Hasso Plattner Institute of Design (d.school). She is the founder/CEO emeritus of Recovers.org, an internationally recognized disaster relief technology company. She's led design work and done workshops for organizations like The Lean Startup, Hyatt, Boys & Girls Club, and SXSW. Her work has been profiled by TED.com, FastCompany, and Forbes and she is the recipient of a White House Champion of Change award for contributions to resilience and disaster recovery. She's a graduate of Harvard University. </p>
 		    </div>
     </div>
-		</br>
+		<br />
 	  <div class="row">
 		  <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
         <img src="/images/ugo.jpg" style="max-width: 100%;">
@@ -165,38 +166,28 @@
 				<p>Co-Founder of The LOOP. Ugo is a social entrepreneur with 15 years of experience in international development, conflict resolution and humanitarian aid. Prior to starting The LOOP, he has worked in the Balkans and in the Middle East, holding management positions in the UN Agency for Palestine Refugees, in the United Nations Development Programme (Iraq Mission), in the United Nations Assistance Mission for Iraq (UNAMI) and in the International Organization for Migration (Iraq/Kuwait mission). Ugo holds a BA in Business Administration and an MA in Conflict Resolution.  </p>
 			</div>
 		</div>
-            </br>
-            <div class="row">
-              <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
-                <img src="/images/tm.jpg" style="max-width: 100%;">
-              </div>
-              <div class="col-lg-8 col-md-8">
-                <h3>Thomas Moulia</h3>
-                <p>Thomas is a software engineer and the founder of Pocketknife Design & Engineering. He's experienced Silicon Valley as a software engineer. previously as an early hire engineer at Weld and Spatch. His work has been featured in The Daily Mail and The Verge among others publications. Thomas is currently focused on email/communications technologies and the medical field. He is a graduate of MIT with a BS in Brain and Cognitive Sciences. </p>
-              </div>
+    <br />
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+        <img src="/images/tm.jpg" style="max-width: 100%;">
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <h3>Thomas Moulia</h3>
+        <p>Thomas is a software engineer and the founder of Pocketknife Design & Engineering. He's experienced Silicon Valley as a software engineer. previously as an early hire engineer at Weld and Spatch. His work has been featured in The Daily Mail and The Verge among others publications. Thomas is currently focused on email/communications technologies and the medical field. He is a graduate of MIT with a BS in Brain and Cognitive Sciences. </p>
+      </div>
 
-            </div>
-            </br>
-            <div class="row">
-              <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2">
                 </br>
                 <img src="/images/mb.jpg" style="max-width: 100%;">
-              </div>
-              <div class="col-lg-8 col-md-8">
-                <h3>Madison Bonovich</h3>
-                <p>Co-founder of The LOOP. Before launching The LOOP, Madison has worked for the United Nations in the Balkans and the Middle East as an international consultant, researcher and trainer for a wide range of clients including CIDA, UNHCR, nonprofit organisations and social entrepreneurs. Madison holds a BA in Political Philosophy and a MA in Conflict resolution and Gender and Development.</p>
-              </div>
-            </div>
-	</div>
-	<div class="row">
-						</br>
-						<div class="col-lg-3 col-md-3"></div>
-						<div class="col-lg-8 col-md-8">
-							<div id="panel">
-								<h3>Additional Instructors</h3>
-								<p><i>Guest facilitators from Ca' Foscari will also be featured at the event.</i></p>
-							</div>
-						</div>
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <h3>Madison Bonovich</h3>
+        <p>Co-founder of The LOOP. Before launching The LOOP, Madison has worked for the United Nations in the Balkans and the Middle East as an international consultant, researcher and trainer for a wide range of clients including CIDA, UNHCR, nonprofit organisations and social entrepreneurs. Madison holds a BA in Political Philosophy and a MA in Conflict resolution and Gender and Development.</p>
+      </div>
+    </div>
 	</div>
 </div>
 </section>
